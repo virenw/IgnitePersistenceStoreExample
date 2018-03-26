@@ -30,6 +30,11 @@
                         <property name="persistenceEnabled" value="true"/>
                     </bean>
                 </property>
+                <!--
+                    Sets a path to the root directory where data and indexes
+                    are to be persisted.
+                -->
+                <property name="storagePath" value="./storage"/>
             </bean>
         </property>
 
