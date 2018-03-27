@@ -1,6 +1,5 @@
 package example.persistentstore;
 
-import example.datagrid.CacheQueryExample;
 import example.model.Organization;
 import org.apache.ignite.*;
 import org.apache.ignite.cache.CacheAtomicityMode;
@@ -29,10 +28,10 @@ import java.util.List;
  */
 public class PersistentStoreExample {
     /** Organizations cache name. */
-    private static final String ORG_CACHE = CacheQueryExample.class.getSimpleName() + "Organizations";
+    private static final String ORG_CACHE = "Organizations";
 
     /** */
-    private static final boolean UPDATE = false;
+    private static final boolean UPDATE = true;
 
     /**
      * @param args Program arguments, ignored.
